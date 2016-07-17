@@ -1,7 +1,7 @@
 //controller to display detail profile of a doctor
 index.controller('indexCtrl',function($scope,$http){
 
-    var link = 'http://127.0.0.1:8085/cats';
+    var link = '/cats';
 
     $http({
             method : 'get',
