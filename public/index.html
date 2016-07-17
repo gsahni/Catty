@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- This is a template for displaying the detailed profile of doctor -->
+<html lang='en'>
+
+<head>
+    <title> Catty</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'/>
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+    <script src = 'modules/module.js'></script>
+    <script src = 'controllers/indexCtrl.js'></script>
+</head>
+
+<body>
+<!-- profileApp module begins -->
+    <div ng-app = 'indexApp' ng-controller = 'indexCtrl' >
+    <!-- Header Begin -->
+        <div class='row'>
+            <div class='header'>
+               <div class='col-lg-4 col-md-4 col-xs-4 col-xm-4' >
+                    <a href = './index.html' >
+                        <img class='image-header' src='images/cats-logo.jpg' alt='Practo' >
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- Header Ends -->
+        <hr class='line-break'>
+
+         <div class='row list-row' ng-repeat= 'values in obj.images'>
+            <a>
+                <div class='col-sm-6' style="margin-left:25%;">
+                    <center>
+                        <img src = {{values.display_sizes[0].uri}} style='width:100%; outline:5px solid black;'>
+                    </center>
+                </div>
+            </a>
+
+             <div class='row'>       
+                <hr style = 'width:100%'>
+            </div>
+        </div>
+    </div>
+<!-- profileApp module ends -->
+</body>
+</html>

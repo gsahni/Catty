@@ -1,0 +1,27 @@
+body {
+    background-color: #707070;
+}
+
+.image-header {
+    height:70px; 
+    margin:10px;
+}
+
+.line-break {
+	width:100%;
+	margin:0px;
+}
+
+.header {
+	max-height:300px;
+}
+.list-row {
+    padding:18px;
+    margin:0% 20% 0% 20%;
+    cursor:pointer;
+}
+
+.list-alert {
+    margin:5% 0% 0% 25%;
+    width:50%;
+}
